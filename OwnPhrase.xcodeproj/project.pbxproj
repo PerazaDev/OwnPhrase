@@ -13,6 +13,11 @@
 		97555C04294977380002BB2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97555C03294977380002BB2A /* Preview Assets.xcassets */; };
 		97555C06294977380002BB2A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97555C05294977380002BB2A /* Persistence.swift */; };
 		97555C09294977380002BB2A /* OwnPhrase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97555C07294977380002BB2A /* OwnPhrase.xcdatamodeld */; };
+		97555C16294978630002BB2A /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97555C15294978630002BB2A /* Splash.swift */; };
+		97555C1929497C5C0002BB2A /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97555C1829497C5C0002BB2A /* Root.swift */; };
+		97555C1B29497D0C0002BB2A /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97555C1A29497D0C0002BB2A /* Favorite.swift */; };
+		97555C1E29497D1B0002BB2A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97555C1D29497D1B0002BB2A /* Home.swift */; };
+		97555C2029497D280002BB2A /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97555C1F29497D280002BB2A /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		97555C03294977380002BB2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		97555C05294977380002BB2A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		97555C08294977380002BB2A /* OwnPhrase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OwnPhrase.xcdatamodel; sourceTree = "<group>"; };
+		97555C15294978630002BB2A /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
+		97555C1829497C5C0002BB2A /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		97555C1A29497D0C0002BB2A /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		97555C1D29497D1B0002BB2A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		97555C1F29497D280002BB2A /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +65,12 @@
 		97555BFB294977360002BB2A /* OwnPhrase */ = {
 			isa = PBXGroup;
 			children = (
-				97555BFC294977360002BB2A /* OwnPhraseApp.swift */,
+				97555C102949779A0002BB2A /* Application */,
+				97555C11294977A40002BB2A /* Common */,
+				97555C0F294977900002BB2A /* Data */,
+				97555C13294977C90002BB2A /* Domain */,
+				97555C12294977BD0002BB2A /* Infrastructure */,
+				97555C14294977DB0002BB2A /* Presentation */,
 				97555BFE294977360002BB2A /* ContentView.swift */,
 				97555C00294977380002BB2A /* Assets.xcassets */,
 				97555C05294977380002BB2A /* Persistence.swift */,
@@ -71,6 +86,102 @@
 				97555C03294977380002BB2A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		97555C0F294977900002BB2A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		97555C102949779A0002BB2A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				97555BFC294977360002BB2A /* OwnPhraseApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		97555C11294977A40002BB2A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				97555C1729497AF40002BB2A /* Enviroments */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		97555C12294977BD0002BB2A /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		97555C13294977C90002BB2A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		97555C14294977DB0002BB2A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				97555C2329497D400002BB2A /* Favorite */,
+				97555C2429497D4A0002BB2A /* Quiz */,
+				97555C2129497D2D0002BB2A /* Home */,
+				97555C2229497D380002BB2A /* Root */,
+				97555C2529497D580002BB2A /* Splash */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		97555C1729497AF40002BB2A /* Enviroments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enviroments;
+			sourceTree = "<group>";
+		};
+		97555C2129497D2D0002BB2A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				97555C1D29497D1B0002BB2A /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		97555C2229497D380002BB2A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				97555C1829497C5C0002BB2A /* Root.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		97555C2329497D400002BB2A /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				97555C1A29497D0C0002BB2A /* Favorite.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		97555C2429497D4A0002BB2A /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				97555C1F29497D280002BB2A /* Quiz.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		97555C2529497D580002BB2A /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				97555C15294978630002BB2A /* Splash.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +255,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				97555C06294977380002BB2A /* Persistence.swift in Sources */,
+				97555C1B29497D0C0002BB2A /* Favorite.swift in Sources */,
+				97555C16294978630002BB2A /* Splash.swift in Sources */,
 				97555C09294977380002BB2A /* OwnPhrase.xcdatamodeld in Sources */,
 				97555BFF294977360002BB2A /* ContentView.swift in Sources */,
 				97555BFD294977360002BB2A /* OwnPhraseApp.swift in Sources */,
+				97555C1E29497D1B0002BB2A /* Home.swift in Sources */,
+				97555C1929497C5C0002BB2A /* Root.swift in Sources */,
+				97555C2029497D280002BB2A /* Quiz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,13 +391,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OwnPhrase/Preview Content\"";
+				DEVELOPMENT_TEAM = ZC4UJ8CP89;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,6 +409,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Codersan.OwnPhrase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,13 +426,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OwnPhrase/Preview Content\"";
+				DEVELOPMENT_TEAM = ZC4UJ8CP89;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,6 +444,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Codersan.OwnPhrase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
